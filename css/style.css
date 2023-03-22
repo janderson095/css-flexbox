@@ -1,0 +1,45 @@
+* {margin: 0;  padding: 0; box-sizing: border-box;}
+
+.geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 625px;
+    background-color: blue;
+}
+
+.container {
+    background-color: #eee;
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+    display: flex; /* display flex torna a divisoria em coluna */
+
+    justify-content: space-between; /* center - alinhamento no sentido horizontal */
+
+    /* justify-content: space-around; */
+
+    /* space around - faz um espaçamento igual,colocando o padding mais uma sobra calculada */
+
+    /* justify-content: space-between; */
+    /* separa as divisorias por igual, respeitando o padding  */
+
+    align-items: center; /* alinhamento vertical */
+    flex-wrap: wrap; /* joga o elemento para a linha de baixo */
+}
+
+.item {
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;
+    
+}
+
+.box {
+    background-color: blueviolet;
+    border: 2px solid #e7e710;
+    height: 50px;
+    flex-basis: 30px /* garante que a base fique com px */
+}
